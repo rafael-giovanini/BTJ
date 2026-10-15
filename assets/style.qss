@@ -1,0 +1,123 @@
+/* ================================
+   🌊 SICAP - Tema Industrial
+   ================================ */
+
+   QMainWindow {
+    background-color: #F4F6F9;
+}
+
+/* ================================
+   🔷 Labels Globais
+   ================================ */
+
+QLabel {
+    font-family: "Segoe UI";
+    color: #111827;
+}
+
+/* ================================
+   🔷 Cards KPI
+   ================================ */
+
+QFrame#kpiCard {
+    background-color: white;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #E5E9F2;
+}
+
+QFrame#kpiCard:hover {
+    border: 1px solid #1CA7EC;
+}
+
+/* Título do KPI */
+QLabel#kpiTitulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Valor do KPI */
+QLabel#kpiValor {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0E5E8C;
+}
+
+/* ================================
+   🔷 Botões
+   ================================ */
+
+QPushButton {
+    background-color: #0E5E8C;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #1CA7EC;
+}
+
+QPushButton:pressed {
+    background-color: #0A2A43;
+}
+
+/* ================================
+   🔷 Tabelas
+   ================================ */
+
+   QTableWidget {
+    background-color: white;
+    color: #111827;              /* 🔥 COR DO TEXTO */
+    alternate-background-color: #F9FAFB;
+    gridline-color: #E5E7EB;
+    border: 1px solid #E5E9F2;
+    border-radius: 8px;
+    font-size: 13px;             /* 🔥 Tamanho ajustado */
+}
+
+QTableWidget::item {
+    color: #111827;              /* 🔥 GARANTE COR DO TEXTO */
+}
+
+QHeaderView::section {
+    background-color: #0A2A43;
+    color: white;
+    padding: 6px;
+    border: none;
+    font-weight: 600;
+}
+
+QTableWidget::item:selected {
+    background-color: #1CA7EC;
+    color: white;
+}
+
+/* ================================
+   🔷 Scrollbar moderna
+   ================================ */
+
+QScrollBar:vertical {
+    background: #F4F6F9;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #CBD5E1;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #94A3B8;
+}
+
+/* ================================
+   🔷 Gráficos (Matplotlib)
+   ================================ */
+
+FigureCanvasQTAgg {
+    background-color: white;
+}
